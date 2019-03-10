@@ -1,0 +1,33 @@
+{
+  "name": "theyalow",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dev/theyalow.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/antonionick/theyalow.git"
+  },
+  "author": "Anton Golovko",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/antonionick/theyalow/issues"
+  },
+  "homepage": "https://github.com/antonionick/theyalow#readme",
+  "devDependencies": {
+    "autoprefixer": "^9.6.1",
+    "css-loader": "^3.2.0",
+    "cssnano": "^4.1.10",
+    "file-loader": "^4.2.0",
+    "mini-css-extract-plugin": "^0.8.0",
+    "optimize-css-assets-webpack-plugin": "^5.0.3",
+    "postcss-loader": "^3.0.0",
+    "sass": "^1.22.12",
+    "sass-loader": "^8.0.0",
+    "webpack": "^4.40.2",
+    "webpack-cli": "^3.3.9",
+    "webpack-dev-server": "^3.8.1"
+  }
+}
