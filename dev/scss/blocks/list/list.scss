@@ -1,0 +1,23 @@
+.list {
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  &__item {
+    flex: 0 1 100%;
+    box-sizing: border-box;
+  }
+
+  &__link {
+    display: flex;
+    text-decoration: none;
+  }
+
+  &__img {
+    display: block;
+  }
+}

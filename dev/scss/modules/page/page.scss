@@ -1,0 +1,13 @@
+.page {
+  box-sizing: border-box;
+  max-width: $width;
+  margin: 0 auto;
+
+  @media only screen and (min-width: 480px) {
+    max-width: 768px;
+  }
+
+  &__link {
+    text-decoration: none;
+  }
+}

@@ -1,0 +1,32 @@
+/*Lucida Sans*/
+@font-face {
+	font-family: "LucidaSans-Italic";
+	src: local("LucidaSans"),
+		url("Lucida/Lucida Sans Italic.ttf");
+}
+
+/*SegoeWP*/
+@font-face {
+	font-family: "SegoeWP";
+	src: local("SegoeWP"),
+	url("Segoe/Segoe WP.ttf");
+}
+
+/*OpenSans*/
+@font-face {
+	font-family: "OpenSans";
+	src: local("OpenSans"),
+	url("OpenSans/OpenSans Bold.ttf");
+}
+
+/*Myriad Pro*/
+@font-face {
+	font-family: 'MyriadPro-Regular';
+	src: url('MyriadPro/MyriadPro-Regular.eot');
+	src: local('Myriad Pro Regular'), local('MyriadPro-Regular'),
+	url('MyriadPro/MyriadPro-Regular.eot?#iefix') format('embedded-opentype'),
+	url('MyriadPro/MyriadPro-Regular.woff') format('woff'),
+	url('MyriadPro/MyriadPro-Regular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}

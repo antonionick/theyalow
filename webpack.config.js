@@ -1,3 +1,5 @@
+const fs = require('fs');
+const path = require("path");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 
@@ -7,7 +9,8 @@ module.exports = {
   },
   output: {
     filename: "theyalow.js",
-    publicPath: "dist/",
+    path: path.resolve(__dirname, 'dist'),
+    publicPath: "/dist/",
   },
   module: {
     rules: [
@@ -20,7 +23,7 @@ module.exports = {
           {
             loader: 'sass-loader',
             options: {
-              implementation: require('sass')
+              implementation: require('sass'),
             },
           },
         ],
@@ -31,7 +34,7 @@ module.exports = {
           {
             loader: 'file-loader',
             options: {
-              filename: '[name].[ext]',
+              name: '[name].[ext]',
               outputPath: 'assets/images',
             }
           }
@@ -43,7 +46,7 @@ module.exports = {
           {
             loader: 'file-loader',
             options: {
-              filename: '[name].[ext]',
+              name: '[name].[ext]',
               outputPath: 'assets/fonts',
             }
           }
