@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/antonionick/theyalow#readme",
   "devDependencies": {
+    "@fortawesome/fontawesome-free": "^5.11.2",
     "autoprefixer": "^9.6.1",
     "css-loader": "^3.2.0",
     "cssnano": "^4.1.10",
