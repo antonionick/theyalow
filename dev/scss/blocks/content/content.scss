@@ -2,5 +2,10 @@
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
+  box-sizing: border-box;
   overflow: hidden;
+
+  &_column {
+    flex-flow: column;
+  }
 }

@@ -30,3 +30,10 @@
 	font-weight: normal;
 	font-style: normal;
 }
+
+/*SegoeUI-Light*/
+@font-face {
+	font-family: "SegoeUI-Light";
+	src: local("SegoeUI-Light"),
+	url("SegoeUI/SegoeUI-Light.ttf");
+}
