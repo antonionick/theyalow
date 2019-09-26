@@ -9,7 +9,13 @@
 @font-face {
 	font-family: "SegoeWP";
 	src: local("SegoeWP"),
-	url("Segoe/Segoe WP.ttf");
+	url("Segoe WP/Segoe WP.ttf");
+}
+
+@font-face {
+	font-family: "SegoeWP-Light";
+	src: local("SegoeWP-Light"),
+	url("Segoe WP/Segoe WP Light.ttf");
 }
 
 /*OpenSans*/
@@ -36,4 +42,11 @@
 	font-family: "SegoeUI-Light";
 	src: local("SegoeUI-Light"),
 	url("SegoeUI/SegoeUI-Light.ttf");
+}
+
+/*ArialMT*/
+@font-face {
+	font-family: "ArialMT";
+	src: local("ArialMT"),
+url("ArialMT/ArialMT.ttf");
 }

@@ -37,6 +37,23 @@
       max-width: 90px;
       max-height: none;
     }
+
+    @media only screen and (min-width: 640px) {
+      &_beautify {
+        &_first {
+          margin-left: -32px;
+          margin-top: 5px;
+        }
+
+        &_second {
+          margin-left: 15px;
+        }
+
+        &_third {
+          margin-left: -6px;
+        }
+      }
+    }
   }
 
   &__text {
@@ -51,6 +68,16 @@
 
     @media only screen and (min-width: 640px) {
       font-size: 23px;
+
+      &_beautify {
+        &_first {
+          margin-left: -22px;
+        }
+
+        &_second {
+          margin-left: 16px;
+        }
+      }
     }
   }
 
