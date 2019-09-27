@@ -22,7 +22,14 @@
 @font-face {
 	font-family: "OpenSans";
 	src: local("OpenSans"),
-	url("OpenSans/OpenSans Bold.ttf");
+	url("OpenSans/OpenSans.ttf");
+}
+
+/*PTSans*/
+@font-face {
+	font-family: "PTSans-NarrowBold";
+	src: local("PTSans-Bold"),
+	url("PTSans/PTSans-Bold.ttf");
 }
 
 /*Myriad Pro*/

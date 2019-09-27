@@ -1,0 +1,113 @@
+.advantages {
+  padding: 35px 0 54px;
+  background-color: #474747;
+
+  &__title {
+    margin: 0 0 40px;
+    padding: 0 10px;
+    font-family: OpenSans, AdobeInvisFont, MyriadPro-Regular, sans-serif;
+    font-size: 28px;
+    font-weight: normal;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: .4px;
+    color: #F5C506;
+
+    @media only screen and (min-width: 480px) {
+      margin-bottom: 60px;
+      font-size: 32px;
+    }
+
+    @media only screen and (min-width: 640px) {
+      margin: 0 0 78px -13px;
+      padding: 0;
+      font-size: 39px;
+    }
+  }
+
+  &__content {
+    display: flex;
+    align-items: flex-start;
+    max-width: 100%;
+    width: 100%;
+  }
+
+  &__images {
+    position: relative;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    max-width: 325px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 10px;
+
+    @media only screen and (min-width: 640px) {
+      align-items: flex-end;
+      max-width: 540px;
+      padding: 0 0 0 12px;
+    }
+
+    &_one-line {
+      margin-bottom: 40px;
+    }
+  }
+
+  &__wrapper-img {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 20px;
+
+    @media only screen and (min-width: 640px) {
+      width: auto;
+      margin-bottom: 0;
+    }
+
+    &_one-line {
+      width: 50%;
+      margin-bottom: 0;
+
+      @media only screen and (min-width: 640px) {
+        width: auto;
+        margin-bottom: 40px;
+      }
+    }
+  }
+
+  &__img {
+    max-width: 100%;
+    opacity: .6;
+
+    &:nth-child(1n + 2) {
+      opacity: .5;
+    }
+  }
+
+  &__attention {
+    display: block;
+    order: -1;
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 10px 0;
+    font-family: PTSans-NarrowBold, AdobeInvisFont, MyriadPro-Regular, sans-serif;
+    font-size: 19px;
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+    background-color: #F5C506;
+    border-radius: 4px;
+
+    @media only screen and (min-width: 480px) {
+      position: absolute;
+      top: -42px;
+      left: -18px;
+      width: 117px;
+      height: 117px;
+      margin-bottom: 0;
+      padding: 0;
+      line-height: 6.5em;
+      border-radius: 50%;
+    }
+  }
+}
