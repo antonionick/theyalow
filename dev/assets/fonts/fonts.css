@@ -2,7 +2,7 @@
 @font-face {
 	font-family: "LucidaSans-Italic";
 	src: local("LucidaSans"),
-		url("Lucida/Lucida Sans Italic.ttf");
+	url("Lucida/Lucida Sans Italic.ttf");
 }
 
 /*SegoeWP*/
@@ -55,5 +55,12 @@
 @font-face {
 	font-family: "ArialMT";
 	src: local("ArialMT"),
-url("ArialMT/ArialMT.ttf");
+	url("ArialMT/ArialMT.ttf");
+}
+
+/*Asap*/
+@font-face {
+	font-family: "Asap-Regular";
+	src: local("Asap-Regular"),
+	url("Asap/Asap-Regular.ttf");
 }

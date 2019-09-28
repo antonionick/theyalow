@@ -1,16 +1,88 @@
 /*L = LAYOUT MODULE*/
 .l-video {
   position: relative;
+  @media only screen and (min-width: 768px) {
+    margin: 40px 0;
+  }
+
+  @media only screen and (min-width: 1024px) {
+    margin-top: 56px;
+    margin-bottom: 71px;
+  }
+
+  &__content {
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    @media only screen and (min-width: 1024px) {
+      flex-flow: row;
+      align-items: center;
+    }
+  }
 
   &__title {
     display: none;
+    box-sizing: border-box;
+    margin: 0;
+    font-family: Asap-Regular,AdobeInvisFont,MyriadPro-Regular, sans-serif;
+    font-weight: normal;
+    text-align: center;
+    color: #F5C506;
+    text-transform: uppercase;
+
+    @media only screen and (min-width: 768px) {
+      display: block;
+      width: 100%;
+      margin-bottom: 20px;
+      font-size: 46px;
+    }
+
+    @media only screen and (min-width: 1024px) {
+      order: 2;
+      flex: 0 1 50%;
+      margin-top: -28px;
+      margin-left: 16px;
+      margin-bottom: 0;
+      font-size: 63px;
+      letter-spacing: .6px;
+      word-spacing: 2px;
+      line-height: 1.2em;
+    }
+  }
+
+  &__title-br {
+    @media only screen and (min-width: 768px) {
+      margin-left: 10px;
+      color: white;
+    }
+
+    @media only screen and (min-width: 1024px) {
+      display: block;
+      margin-left: 16px;
+    }
   }
 
   &__wrapper-video {
+    @media only screen and (min-width: 768px) {
+      max-width: 650px;
+    }
+
+    @media only screen and (min-width: 1024px) {
+      order: 1;
+      max-width: 549px;
+      max-height: 327px;
+      margin-left: 11px;
+    }
   }
 
   &__video {
-
+    @media only screen and (min-width: 1024px) {
+      width: 117%;
+      height: 327px;
+      margin-left: -52px;
+    }
   }
 
   &__layer {
@@ -24,5 +96,43 @@
     height: 100%;
     background: #7d7a2b;
     opacity: 0.2;
+  }
+
+  &__change {
+    display: none;
+
+    @media only screen and (min-width: 768px) {
+      position: absolute;
+      z-index: 10;
+      top: calc(50% + 7px);
+      right: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      box-sizing: border-box;
+      width: 33px;
+      height: 58px;
+      font-size: 24px;
+      color: white;
+      background: #F5C506;
+      transition: color $regular-anim-time;
+    }
+
+    @media only screen and (min-width: 1024px) {
+      top: calc(50% - 32px);
+    }
+
+    &:hover {
+      cursor: pointer;
+      color: #696969;
+    }
+
+    &:active {
+      color: white;
+    }
+  }
+
+  &__change-previous {
+    left: 0;
   }
 }

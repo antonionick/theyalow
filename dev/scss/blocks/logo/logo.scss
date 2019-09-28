@@ -30,6 +30,10 @@
       .logo__wrapper-img {
         animation: logo $regular-anim-time infinite;
       }
+
+      .logo__title {
+        text-shadow: 0 0 10px #141414;
+      }
     }
 
     &:active {
@@ -50,6 +54,7 @@
     color: #FFFFFF;
     text-transform: uppercase;
     text-shadow: 0 2px 2px #2c2c2c;
+    transition: text-shadow $regular-anim-time;
 
     @media only screen and (min-width: 768px) {
       margin-top: 3px;

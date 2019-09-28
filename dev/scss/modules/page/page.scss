@@ -25,10 +25,14 @@
       left: 0;
       right: 0;
       display: block;
+      min-height: 600px;
       width: 100%;
-      min-height: 566px;
-      background: no-repeat url("../assets/images/header-background.png");
+      background: no-repeat url("../assets/images/header-background.png") #24230e;
       background-size: cover;
+    }
+
+    @media only screen and (min-width: 1024px) {
+      min-height: 566px;
     }
   }
 }
