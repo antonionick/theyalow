@@ -32,6 +32,12 @@
 	url("PTSans/PTSans-Bold.ttf");
 }
 
+@font-face {
+	font-family: "PTSans-Regular";
+	src: local("PTSans-Regular"),
+	url("PTSans/PTSans-Regular.ttf");
+}
+
 /*Myriad Pro*/
 @font-face {
 	font-family: 'MyriadPro-Regular';
@@ -49,6 +55,18 @@
 	font-family: "SegoeUI-Light";
 	src: local("SegoeUI-Light"),
 	url("SegoeUI/SegoeUI-Light.ttf");
+}
+
+@font-face {
+	font-family: "SegoeUI-Bold";
+	src: local("SegoeUI-Bold"),
+	url("SegoeUI/SegoeUI-Bold.ttf");
+}
+
+@font-face {
+	font-family: "SegoeUI";
+	src: local("SegoeUI"),
+	url("SegoeUI/SegoeUI.ttf");
 }
 
 /*ArialMT*/

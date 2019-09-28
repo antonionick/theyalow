@@ -107,53 +107,61 @@
 		<article class="page">
 			<h2 class="notes__title">Lorem ipsum dolor sit amet</h2>
 			<!--NOTES INFO-->
-			<div class="content notes__wrapper-info">
-				<div class="content notes__info">
-					<p class="notes__text">Lorem ipsum dolor sit amet, consecte&shy;tur adipisicing elit, sed do eiusmod tempor
-						incididunt ut</p>
-					<span class="notes__plus"><i class="fas fa-plus"></i></span>
-				</div>
-				<!--NOTES VIDEO-->
-				<div class="content notes__wrapper-video c-video">
-					<video class="c-video__video notes__video" src="" poster="assets/images/notes-video-image.png"></video>
-					<span class="c-video__play c-video__play_main notes__video-play">
+			<div class="notes__wrapper-content">
+				<div class="content notes__wrapper-info">
+					<div class="content notes__info">
+						<p class="notes__text">Lorem ipsum dolor sit amet, consecte&shy;tur adipisicing elit, sed do eiusmod tempor inci&shy;didunt ut</p>
+						<span class="notes__plus"><i class="fas fa-plus"></i></span>
+					</div>
+					<!--NOTES VIDEO-->
+					<div class="content notes__wrapper-video c-video">
+						<video class="c-video__video notes__video" src="" poster="assets/images/notes-video-image.png"></video>
+						<span class="c-video__play c-video__play_main notes__video-play">
 						<i class="c-video__play-icon notes__video-play-icon fas fa-play"></i>
 					</span>
+					</div>
 				</div>
-			</div>
-			<!--SOC NETWORK-->
-			<div class="soc-network">
-				<!--SOC NETWORK IMAGE-->
-				<div class="soc-network__wrapper-img">
-					<img class="soc-network__img" src="assets/images/twitter.svg" alt="twitter">
-				</div>
-				<!--SOC NETWORK MESSAGES-->
-				<div class="soc-network__wrapper-messages">
-					<div class="soc-network__message">
+				<!--SOC NETWORK-->
+				<div class="soc-network">
+					<!--SOC NETWORK IMAGE-->
+					<div class="soc-network__wrapper-img">
+						<img class="soc-network__img" src="assets/images/twitter.svg" alt="twitter">
+						<span class="notes__plus notes__plus_soc-network"><i class="fas fa-plus"></i></span>
+						<span class="notes__info-number">22</span>
+					</div>
+					<!--SOC NETWORK MESSAGES-->
+					<div class="soc-network__wrapper-messages">
+						<div class="soc-network__message">
 							<span class="soc-network__message-text">
 								Daily Mobile UI Design Inspiration #1 via @cssauthor
 							</span>
-					</div>
-					<div class="soc-network__message soc-network__message_opacity_medium">
+						</div>
+						<div class="soc-network__message soc-network__message_opacity_medium">
 							<span class="soc-network__message-text">
 								Daily Mobile UI Design Inspiration #1 via @cssauthor
 							</span>
-					</div>
-					<div class="soc-network__message soc-network__message_opacity_height">
+						</div>
+						<div class="soc-network__message soc-network__message_opacity_height">
 							<span class="soc-network__message-text">
 								Daily Mobile UI Design Inspiration #1 via @cssauthor
 							</span>
+						</div>
+						<!--SOC FORM-->
+						<form class="soc-network__form" action="#" method="get">
+							<input type="text" class="soc-network__form-text">
+							<button class="soc-network__submit" type="submit">Tweet</button>
+						</form>
 					</div>
-					<!--SOC FORM-->
-					<form class="soc-network__form" action="#" method="get">
-						<input type="text" class="soc-network__form-text">
-						<button class="soc-network__submit" type="submit">Tweet</button>
-					</form>
 				</div>
+				<!--NOTES DATE-->
+				<aside class="date notes__date">
+					<span class="date__number notes__date-number">25</span>
+					<span class="date__month notes__date-month">april</span>
+				</aside>
 			</div>
 			<!--NOTES SLIDER-->
 			<div class="content notes__wrapper-slider">
-				<div class="notes__slider"><span class="notes__slider-now"></span></div>
+				<input class="notes__slider" type="range" min="0" max="100" value="35">
 			</div>
 		</article>
 	</section>
@@ -192,8 +200,7 @@
 		<a class="logo__link footer__link" href="#">
 			<div class="logo__wrapper-img footer__wrapper-img">
 				<img class="logo__img footer__img" src="assets/images/logo_1.png" alt="logo">
-				<img class="logo__img footer__img logo__img_layer_two footer__img_layer_two" src="assets/images/logo_2.png"
-						 alt="logo">
+				<img class="logo__img footer__img logo__img_layer_two footer__img_layer_two" src="assets/images/logo_2.png" alt="logo">
 			</div>
 			<span class="logo__title footer__text">TheYalow</span>
 		</a>

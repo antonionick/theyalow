@@ -3,9 +3,46 @@
     padding-top: 12px;
   }
 
+  @media only screen and (min-width: 768px) {
+    padding: 35px 0 21px;
+    background: url("../assets/images/back-notes.png");
+  }
+
   &__title {
     display: none;
+
+    padding-left: 2px;
+    font-family: PTSans-Regular, AdobeInvisFont, MyriadPro-Regular, sans-serif;
+    font-size: 37px;
+    font-weight: normal;
+    letter-spacing: .4px;
+    color: white;
     text-transform: uppercase;
+
+    @media only screen and (min-width: 768px) {
+      display: block;
+      margin: 0 0 25px 0;
+      text-align: center;
+    }
+
+    @media only screen and (min-width: 1024px) {
+      text-align: left;
+      margin-bottom: 33px;
+    }
+  }
+
+  &__wrapper-content {
+    @media only screen and (min-width: 768px) {
+      position: relative;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-bottom: 105px;
+    }
+
+    @media only screen and (min-width: 1024px) {
+      margin-bottom: 128px;
+    }
   }
 
   &__wrapper-info {
@@ -14,6 +51,16 @@
     justify-content: space-around;
     align-items: flex-start;
     align-content: flex-start;
+
+    @media only screen and (min-width: 768px) {
+      justify-content: flex-start;
+      flex-wrap: nowrap;
+      max-width: 75%;
+    }
+
+    @media only screen and (min-width: 1024px) {
+      max-width: 64.5%;
+    }
   }
 
   &__info {
@@ -32,12 +79,43 @@
       margin: 0 0 0 3px;
       padding: 15px 23px 13px 27px;
     }
+
+    @media only screen and (min-width: 768px) {
+      flex: 0 1 50%;
+      margin: 0;
+      padding: 10px 30px 20px 20px;
+    }
+
+    @media only screen and (min-width: 1024px) {
+      flex: 0 1 51.5%;
+      padding: 16px 35px 28px 31px;
+    }
+  }
+
+  &__info-number {
+    display: none;
+
+    @media only screen and (min-width: 768px) {
+      position: absolute;
+      display: block;
+      top: 10px;
+      right: 8px;
+      font-family: SegoeWP, AdobeInvisFont, MyriadPro-Regular, sans-serif;
+      font-size: 25px;
+      font-weight: normal;
+      color: #fdf3df;
+    }
+
+    @media only screen and (min-width: 1024px) {
+      top: 14px;
+      right: 17px;
+    }
   }
 
   &__text {
     overflow: hidden;
     margin: 0;
-    font-family: SegoeWP-Light,AdobeInvisFont,MyriadPro-Regular, sans-serif;
+    font-family: SegoeWP-Light, AdobeInvisFont, MyriadPro-Regular, sans-serif;
     color: white;
     font-size: 21px;
     text-overflow: ellipsis;
@@ -45,6 +123,19 @@
 
     @media only screen and (min-width: 640px) {
       font-size: 30px;
+    }
+
+    @media only screen and (min-width: 768px) {
+      max-width: 280px;
+      max-height: 150px;
+      font-size: 27px;
+    }
+
+    @media only screen and (min-width: 1024px) {
+      max-height: 190px;
+      font-size: 29px;
+      line-height: 1.32em;
+      letter-spacing: .3px;
     }
   }
 
@@ -62,9 +153,56 @@
       font-size: 11px;
     }
 
+    @media only screen and (min-width: 768px) {
+      bottom: 12px;
+      right: 13px;
+      font-size: 12px;
+    }
+
     &:hover {
       cursor: pointer;
       color: #464646;
+    }
+
+    &_soc-network {
+      display: none;
+
+      @media only screen and (min-width: 768px) {
+        display: block;
+        right: 9px;
+      }
+    }
+  }
+
+  &__date {
+    display: none;
+
+    @media only screen and (min-width: 768px) {
+      position: absolute;
+      left: 0;
+      bottom: -85px;
+      display: block;
+      max-width: 113px;
+      max-height: 86px;
+    }
+
+    @media only screen and (min-width: 1024px) {
+      bottom: -86px;
+    }
+  }
+
+  &__date-number {
+    @media only screen and (min-width: 768px) {
+      margin-left: 9px;
+      color: white;
+    }
+  }
+
+  &__date-month {
+    @media only screen and (min-width: 768px) {
+      margin-top: -3px;
+      margin-left: 8px;
+      color: #B26529;
     }
   }
 
@@ -77,11 +215,34 @@
       margin-top: -2px;
       margin-right: 4px;
     }
+
+    @media only screen and (min-width: 768px) {
+      max-width: 50%;
+      min-height: 0;
+      max-height: 183px;
+      margin: 0;
+    }
+
+    @media only screen and (min-width: 1024px) {
+      max-width: 316px;
+      min-height: 233px;
+    }
   }
 
   &__video {
     @media only screen and (min-width: 640px) {
       width: 114%;
+      margin-left: -35px;
+    }
+
+    @media only screen and (min-width: 768px) {
+      width: 100%;
+      margin: 0;
+    }
+
+    @media only screen and (min-width: 1024px) {
+      width: 114%;
+      min-height: 234px;
       margin-left: -35px;
     }
   }
@@ -101,6 +262,16 @@
       height: 62px;
       font-size: 28px;
     }
+
+    @media only screen and (min-width: 768px) {
+      top: calc(50% - 32px);
+      left: calc(50% - 32px);
+    }
+
+    @media only screen and (min-width: 1024px) {
+      top: calc(50% - 23px);
+      left: calc(50% - 28px);
+    }
   }
 
   &__video-play-icon {
@@ -108,6 +279,60 @@
 
     @media only screen and (min-width: 480px) {
       margin-left: 7px;
+    }
+  }
+
+  &__wrapper-slider {
+    max-width: 90%;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  &__slider {
+    -webkit-appearance: none;
+    display: none;
+    width: 100%;
+    height: 16px;
+    margin-left: 24px;
+    background-color: rgba(250, 230, 148, .8);
+    border-radius: 8px;
+    outline: none;
+    opacity: .7;
+    transition: opacity .2s;
+
+    @media only screen and (min-width: 768px) {
+      display: block;
+    }
+
+    &:hover {
+      opacity: 1;
+    }
+
+    &::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      width: 140px;
+      height: 16px;
+      background: #EC9E03;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+
+      @media only screen and (min-width: 1024px) {
+        width: 198px;
+      }
+    }
+
+    &::-moz-range-thumb {
+      width: 140px;
+      height: 16px;
+      background: #EC9E03;
+      border-radius: 10px;
+      border: none;
+      cursor: pointer;
+
+      @media only screen and (min-width: 1024px) {
+        width: 198px;
+      }
     }
   }
 }
