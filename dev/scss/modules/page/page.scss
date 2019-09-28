@@ -7,7 +7,28 @@
     max-width: 768px;
   }
 
+  @media only screen and (min-width: 768px) {
+    max-width: 1024px;
+  }
+
   &__link {
     text-decoration: none;
+  }
+
+  &__top-wrapper {
+    display: none;
+
+    @media only screen and (min-width: 768px) {
+      position: absolute;
+      z-index: -100;
+      top: 0;
+      left: 0;
+      right: 0;
+      display: block;
+      width: 100%;
+      min-height: 566px;
+      background: no-repeat url("../assets/images/header-background.png");
+      background-size: cover;
+    }
   }
 }
